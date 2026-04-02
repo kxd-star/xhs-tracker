@@ -35,7 +35,7 @@ jobs:
           XHS_URL: ${{ secrets.XHS_URL }}
           XHS_COOKIE: ${{ secrets.XHS_COOKIE }}
         run: |
-          python scripts/main.py
+          python fetch_xhs.py
 
       - name: Commit and push if changed
         run: |
