@@ -29,11 +29,6 @@ jobs:
           playwright install --with-deps chromium
 
       - name: Run Scraper
-        env:
-          # 将你的博主主页 URL 和 Cookie 配置在仓库的 Secrets 中
-          # 前往 Settings > Secrets and variables > Actions 来添加
-          XHS_URL: ${{ secrets.XHS_URL }}
-          XHS_COOKIE: ${{ secrets.XHS_COOKIE }}
         run: |
           python fetch_xhs.py
 
