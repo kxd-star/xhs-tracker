@@ -29,6 +29,8 @@ jobs:
           playwright install --with-deps chromium
 
       - name: Run Scraper
+        env:
+          XHS_COOKIE: ${{ secrets.XHS_COOKIE }}
         run: |
           python fetch_xhs.py
 
