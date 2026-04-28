@@ -2,9 +2,7 @@ name: Scheduled XHS Feed Fetch
 
 on:
   workflow_dispatch: # 允许手动触发
-  schedule:
-    # 每天 02:05 UTC 时间运行，对应北京时间 (UTC+8) 的上午 10:05
-    - cron: '5 2 * * *'
+
 
 jobs:
   build:
